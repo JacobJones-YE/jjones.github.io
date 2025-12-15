@@ -3,10 +3,32 @@
 <head>
 <title>Ollie's Overnight</title>
 <meta charset="utf-8">
+<meta name="description" content="Ollie's Overnight's Bed and Breakfast website for suite and event details and booking.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Link to stylesheet -->
 <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("nav a").hover(
+    function(){
+      $(this).stop().animate(
+        { backgroundColor: "#9999FF" }, // hover color
+        300
+      );
+    },
+    function(){
+      $(this).stop().animate(
+        { backgroundColor: "transparent" },
+        300
+      );
+    }
+  );
+});
+</script>
 <!-- Wrapper Section -->
 <div id="wrapper">
   <!-- Header section w/ logo -->
@@ -27,13 +49,32 @@
  <main>
  <h2> Grab your board and come on down! </h2>
  <p> Welcome to paradise! At our one-of-a-kind skate-park bed & breakfast, every day starts with fresh coffee, warm waffles, and the sound of wheels rolling across smooth concrete.</p>
- <img src="images/front.jpg" alt="Image of front of house." width="400" height="250">
+ <img src="images/front.jpg" alt="Image of the front side of Ollie's Overnight. A two story brick building surrounded by a concret skatepark." width="400" height="250">
  <p> Whether you’re here to shred the ramps, cruise the flow lines, or just kick back and watch the action from a sunny porch, our cozy rooms and custom-built skate features make this the perfect getaway for skaters, families, and adventure seekers alike. </p>
  <h2>Specialty Stays and Signature Events</h2>
  <p> At Ollie’s Overnight, guests can stay in style with our two signature spaces: <a href="rooms/deckroom.html">The Deck Room</a>, a cozy, board-inspired retreat featuring wall-mounted skate art and warm, wood-grain finishes, and <a href="rooms/halfpiperoom.html">The Halfpipe Suite</a>, a spacious upstairs getaway with curved architectural accents that echo the flow of a real ramp. </p>
  <p> Our <a href="events/weekend.html">weekend events</a> bring the kind of energy skaters love, from our hands-on DIY Deck Art Workshop, where guests paint their own custom boards, to Bagels and Boards, a relaxed morning meetup offering fresh bagels, coffee, and an easygoing skate session to start the day right. Whether you're here to ride, relax, or create, Ollie’s Overnight blends comfort with skate-culture charm. </p>
-  
-  </main>
+ <table class="tbc">
+	<tr>
+	<th></th>
+	<th>Regular Suite</th>
+	<th>Deck Room Suite</th>
+    <th>Half-Pipe Suite</th>
+	</tr>
+  <tr>
+    <td><strong>Weekend Stay Price</strong></td>
+	<td class="tc">$75</td>
+	<td class="tc">$100</td>
+	<td class="tc">$150</td>
+  </tr>
+  <tr>
+	<td><strong>Complimentary Gift</strong></td>
+    <td class="tc">Free sticker pack included</td>
+    <td class="tc">Free skate tool gift basket</td>
+    <td class="tc">Exclusive Ollie's Overnight custom deck</td>
+  </tr>
+ </table> 
+ </main>
   <!-- Footer section -->
   <footer>
   Copyright &copy; 2025<br>
